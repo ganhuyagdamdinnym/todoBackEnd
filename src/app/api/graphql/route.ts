@@ -12,6 +12,7 @@ connect();
 const server = new ApolloServer({
   typeDefs: TodoTypeDefs,
   resolvers,
+  introspection: true,
 });
 // const UserServer = new ApolloServer({
 //   typeDefs: TodoTypeDefs,
